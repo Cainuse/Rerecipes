@@ -1,4 +1,4 @@
-export 'package:rerecipe_app/Recipe.dart';
+export 'package:rerecipe_app/Views/Recipe.dart';
 class Recipe{
   String name;
   String imgPath;
