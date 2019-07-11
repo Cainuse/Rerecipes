@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Recipe.dart';
 
 class RecipesView extends StatefulWidget {
+  RecipesView();
   @override
   State<StatefulWidget> createState() {
     return _RecipesViewState();
@@ -17,14 +18,7 @@ class _RecipesViewState extends State<RecipesView> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        // White background
-          appBar: AppBar(
-            // Blue app bar
-            title: Text('Rerecipes'), //Text
-          ),
-          body: Column(
+    return ListView(
             children: _recipes
                 .map((recipe) => Card(
                 child: Column(
@@ -43,8 +37,6 @@ class _RecipesViewState extends State<RecipesView> {
                     )
                   ],
                 )))
-                .toList(),
-          )),
-    );
+                .toList());
   }
 }
