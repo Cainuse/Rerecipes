@@ -19,15 +19,18 @@ class _IngredientViewState extends State<IngredientView> {
     return Container(
       margin: EdgeInsets.only(left: 4.0),
       child: Chip(
-          avatar: Icon(widget.icon),
+          avatar: Icon(widget.icon,color: Colors.white,),
           label: Text(
             widget.name,
-            style: TextStyle(fontSize: 18.0),
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.white,
+            ),
           ),
           labelPadding: EdgeInsets.all(3.0),
           deleteIcon: Icon(Icons.cancel),
-          deleteIconColor: Colors.redAccent,
-          backgroundColor: Colors.lightGreenAccent,
+          deleteIconColor: Colors.white,
+          backgroundColor: Colors.blueAccent,
           deleteButtonTooltipMessage: "Delete this item",
           onDeleted: () => setState(() {
                 widget.items.remove(widget.name);
