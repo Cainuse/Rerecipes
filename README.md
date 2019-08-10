@@ -1,16 +1,7 @@
-# rerecipe_app
+Welcome to Revercipe App!
 
-A new Flutter project.
+This app aims to optimize the recipe searching experience. 
 
-## Getting Started
+Contrary to conventional recipes which users glance through and when an entry is found to be ideal, it is not guranteed that the users will have sufficient ingredients to cook the said recipe. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Revercipe (Reversed recipe) reverses this process and collects all the ingredients the user has and generates a list of recipes that we know for sure the user can cook. 
